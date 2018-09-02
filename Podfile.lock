@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.7.2)
+  - JMMaskTextField-Swift (0.1.2)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - JMMaskTextField-Swift
+  - SwiftyJSON (~> 4.0)
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  JMMaskTextField-Swift: c47d4f6a16faa49a1abaa8d3bd59ca0892db0e09
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: bd079629d8417414401debd1f0f6cae62060fa7f
+
+COCOAPODS: 1.4.0
