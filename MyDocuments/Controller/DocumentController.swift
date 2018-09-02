@@ -80,23 +80,16 @@ class DocumentController: NSObject {
     }
     
     func deleteDocument(i: Int, callback: @escaping HandlerObject){
-        ServiceDocument().deleteImage(idImage: listDocuments[i].photoId) { result in
-        
+        ServiceDocument().deleteDocument(document:self.listDocuments[i]) { result in
             if result as! Bool {
-                ServiceDocument().deleteDocument(document:self.listDocuments[i]) { result in
-                    if result as! Bool {
-                        self.listDocuments.remove(at: i)
-                        callback(true)
-                    } else {
-                        callback(false)
-                    }
-                    
-                }
+                self.listDocuments.remove(at: i)
+                callback(true)
             } else {
                 callback(false)
             }
         }
     }
+    
     
     func filterListDocuments(name: String, documents: [DocumentModel]) -> [DocumentModel] {
         if name.isEmpty {
